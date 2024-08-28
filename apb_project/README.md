@@ -1,5 +1,8 @@
 APB Project
 ============
+
+Running is simple! Just run `make`. :)
+
 This is a complete APB interface project build in UVM and using only basic concepts as the motivation is to help beginners get started on understanding basic coding
 
 apb_if.sv  ->  Is the APB interface protocol signal interface

@@ -25,7 +25,7 @@ class apb_rw extends uvm_sequence_item;
    endfunction
 
    function string convert2string();
-     return $psprintf("kind=%s addr=%0h data=%0h ",apb_cmd,addr,data);
+     return $psprintf("kind=%0h addr=%0h data=%0h ",apb_cmd,addr,data);
    endfunction
 
 endclass: apb_rw

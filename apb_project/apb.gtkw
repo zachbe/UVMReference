@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Wed Aug 28 19:35:35 2024
+[*]
+[dumpfile] "/home/zach-belateche/repos/UVMReference/apb_project/testbench.vcd"
+[dumpfile_mtime] "Wed Aug 28 19:34:44 2024"
+[dumpfile_size] 8417
+[savefile] "/home/zach-belateche/repos/UVMReference/apb_project/apb.gtkw"
+[timestart] 0
+[size] 1720 1324
+[pos] -1 -1
+*-7.359099 197 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[treeopen] test.apb_if.
+[sst_width] 273
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 409
+@28
+test.apb_if.pclk
+@22
+#{test.apb_if.paddr[31:0]} test.apb_if.paddr[31] test.apb_if.paddr[30] test.apb_if.paddr[29] test.apb_if.paddr[28] test.apb_if.paddr[27] test.apb_if.paddr[26] test.apb_if.paddr[25] test.apb_if.paddr[24] test.apb_if.paddr[23] test.apb_if.paddr[22] test.apb_if.paddr[21] test.apb_if.paddr[20] test.apb_if.paddr[19] test.apb_if.paddr[18] test.apb_if.paddr[17] test.apb_if.paddr[16] test.apb_if.paddr[15] test.apb_if.paddr[14] test.apb_if.paddr[13] test.apb_if.paddr[12] test.apb_if.paddr[11] test.apb_if.paddr[10] test.apb_if.paddr[9] test.apb_if.paddr[8] test.apb_if.paddr[7] test.apb_if.paddr[6] test.apb_if.paddr[5] test.apb_if.paddr[4] test.apb_if.paddr[3] test.apb_if.paddr[2] test.apb_if.paddr[1] test.apb_if.paddr[0]
+@29
+test.apb_if.pwrite
+@28
+test.apb_if.penable
+@22
+#{test.apb_if.prdata[31:0]} test.apb_if.prdata[31] test.apb_if.prdata[30] test.apb_if.prdata[29] test.apb_if.prdata[28] test.apb_if.prdata[27] test.apb_if.prdata[26] test.apb_if.prdata[25] test.apb_if.prdata[24] test.apb_if.prdata[23] test.apb_if.prdata[22] test.apb_if.prdata[21] test.apb_if.prdata[20] test.apb_if.prdata[19] test.apb_if.prdata[18] test.apb_if.prdata[17] test.apb_if.prdata[16] test.apb_if.prdata[15] test.apb_if.prdata[14] test.apb_if.prdata[13] test.apb_if.prdata[12] test.apb_if.prdata[11] test.apb_if.prdata[10] test.apb_if.prdata[9] test.apb_if.prdata[8] test.apb_if.prdata[7] test.apb_if.prdata[6] test.apb_if.prdata[5] test.apb_if.prdata[4] test.apb_if.prdata[3] test.apb_if.prdata[2] test.apb_if.prdata[1] test.apb_if.prdata[0]
+#{test.apb_if.pwdata[31:0]} test.apb_if.pwdata[31] test.apb_if.pwdata[30] test.apb_if.pwdata[29] test.apb_if.pwdata[28] test.apb_if.pwdata[27] test.apb_if.pwdata[26] test.apb_if.pwdata[25] test.apb_if.pwdata[24] test.apb_if.pwdata[23] test.apb_if.pwdata[22] test.apb_if.pwdata[21] test.apb_if.pwdata[20] test.apb_if.pwdata[19] test.apb_if.pwdata[18] test.apb_if.pwdata[17] test.apb_if.pwdata[16] test.apb_if.pwdata[15] test.apb_if.pwdata[14] test.apb_if.pwdata[13] test.apb_if.pwdata[12] test.apb_if.pwdata[11] test.apb_if.pwdata[10] test.apb_if.pwdata[9] test.apb_if.pwdata[8] test.apb_if.pwdata[7] test.apb_if.pwdata[6] test.apb_if.pwdata[5] test.apb_if.pwdata[4] test.apb_if.pwdata[3] test.apb_if.pwdata[2] test.apb_if.pwdata[1] test.apb_if.pwdata[0]
+@28
+test.apb_if.psel
+[pattern_trace] 1
+[pattern_trace] 0

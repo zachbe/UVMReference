@@ -38,16 +38,28 @@ module test;
    always begin
       #10 pclk = ~pclk;
    end
- 
+
    //Instantiate a physical interface for APB interface
   apb_if  apb_if(.pclk(pclk));
+                 //.paddr(paddr),
+	         //.psel(psel),
+	         //.penable(penable),
+	         //.pwrite(pwrite),
+	         //.prdata(prdata),
+	         //.pwdata(pwdata));
   
   initial begin
+    // Dump a VCD
+    $dumpfile("testbench.vcd");
+    $dumpvars(0, apb_if);
     //Pass this physical interface to test top (which will further pass it down to env->agent->drv/sqr/mon
     uvm_config_db#(virtual apb_if)::set( null, "uvm_test_top", "vif", apb_if);
+    
     //Call the test - but passing run_test argument as test class name
     //Another option is to not pass any test argument and use +UVM_TEST on command line to sepecify which test to run
-    run_test("apb_base_test");
+    
+    //run_test("apb_base_test");
+    run_test("apb_wr_test");
   end
   
   
