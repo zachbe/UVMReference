@@ -30,7 +30,10 @@ class apb_base_seq extends uvm_sequence#(apb_rw);
 endclass
 
 //------------------------
-// NEW: A sequence that reads and then writes from the same address
+// NEW: RW TEST
+// This sequence creates 5 pairs of transactions.
+// Each pair consists of a write transaction to a random address.
+// Then, a read transaction is issued to the same address.
 //------------------------
 class apb_wr_seq extends uvm_sequence#(apb_rw);
 
