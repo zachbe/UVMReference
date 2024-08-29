@@ -65,4 +65,40 @@ class apb_wr_seq extends uvm_sequence#(apb_rw);
   
 endclass
 
+//------------------------
+// NEW: MIX-MAX test
+// This sequence creates read and write transactions to 0x00000000
+// and to 0xFFFFFFFF.
+//------------------------
+class apb_minmax_seq extends uvm_sequence#(apb_rw);
+
+  `uvm_object_utils(apb_minmax_seq)
+
+  function new(string name ="");
+    super.new(name);
+  endfunction
+
+  //Main Body method that gets executed once sequence is started
+  task body();
+     apb_rw rw_trans_0;
+     apb_rw rw_trans_f;
+     //Create 5 pairs of random APB read/write transactions and send to driver
+     //All with either go to 0x00000000 or 0xFFFFFFFF
+     repeat(5) begin
+       rw_trans_0 = apb_rw::type_id::create(.name("rw_trans_0"),.contxt(get_full_name()));
+       start_item(rw_trans_0);
+       assert (rw_trans_0.randomize());
+       rw_trans_0.addr = 32'h00000000;
+       finish_item(rw_trans_0);
+       
+       rw_trans_f = apb_rw::type_id::create(.name("rw_trans_f"),.contxt(get_full_name()));
+       start_item(rw_trans_f);
+       assert (rw_trans_f.randomize());
+       rw_trans_f.addr = 32'hFFFFFFFF;
+       finish_item(rw_trans_f);
+     end
+  endtask
+  
+endclass
+
 `endif

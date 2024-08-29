@@ -59,7 +59,8 @@ module test;
     //Another option is to not pass any test argument and use +UVM_TEST on command line to sepecify which test to run
     
     //run_test("apb_base_test");
-    run_test("apb_wr_test");
+    //run_test("apb_wr_test");
+    run_test("apb_minmax_test");
   end
   
   
