@@ -5,13 +5,15 @@
 `ifndef APB_IF_SV
 `define APB_IF_SV
 
-interface apb_if(input bit pclk);
-   wire [31:0] paddr;
-   wire        psel;
-   wire        penable;
-   wire        pwrite;
-   wire [31:0] prdata;
-   wire [31:0] pwdata;
+interface apb_if(
+   input  wire pclk,
+   output wire [31:0] paddr,
+   output wire  psel,
+   output wire  penable,
+   output wire  pwrite,
+   input  wire [31:0] prdata,
+   output wire [31:0] pwdata
+);
 
 
    //Master Clocking block - used for Drivers
